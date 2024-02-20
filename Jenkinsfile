@@ -21,7 +21,7 @@ pipeline
                 checkout scmGit(branches: [[name: '*/sri']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/sri576/java-war-app.git']])
             }
         }
-        stage('Build')
+        stage('Maven Build ')
         {
             steps
             {
